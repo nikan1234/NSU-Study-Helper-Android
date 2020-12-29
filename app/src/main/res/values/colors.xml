@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EFEFF4</color>
+    <color name="colorPrimaryDark">#606060</color>
+    <color name="colorAccent">#F39C63</color>
+    <color name="backgroundColor">#606060</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="diagramBarShadowColor">#CCD1D1D6</color>
+    <color name="diagramBarTextColor">#444444</color>
+
+    <color name="diagramColor_1">#72bb53</color>
+    <color name="diagramColor_2">#ffcc00</color>
+    <color name="diagramColor_3">#ff9500</color>
+    <color name="diagramColor_4">#ff3b30</color>
+
+</resources>

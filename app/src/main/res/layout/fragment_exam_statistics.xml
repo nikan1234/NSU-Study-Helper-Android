@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        tools:context=".mvp.presentation.exam.statistics.ExamStatisticsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/app_background" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+
+                android:id="@+id/statistics_examination_name_title"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/TopLevelTitleStyle" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="32dp" android:layout_marginTop="32dp" android:layout_marginEnd="32dp"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statistics_examination_name_title"
+                android:layout_marginStart="32dp" android:layout_marginEnd="32dp" android:id="@+id/statusLayout">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    style="@style/LowLevelTitleStyle"
+                    android:id="@+id/statistics_examination_semester_title"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LowLevelTitleStyle"
+                    android:text="@string/examination_semester"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/statistics_grades_title"
+                android:text="@string/subject_statistics_grades"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                style="@style/MiddleLevelTitleStyle"
+                android:layout_marginStart="32dp" android:layout_marginEnd="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/statusLayout" android:layout_marginTop="32dp"/>
+        <ru.nsk.nsu.studyhelper.mvp.presentation.exam.statistics.diagram.MarksDiagram
+                android:id="@+id/statistics_subject_marks_diagram"
+                android:minHeight="220dp"
+
+                android:layout_height="wrap_content" android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/statistics_grades_title"
+                android:layout_marginStart="32dp" android:layout_marginEnd="32dp" android:layout_marginTop="16dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statistics_subject_marks_diagram"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp" android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp">
+
+            <LinearLayout
+                    android:id="@+id/subject_user_mark_layout"
+                    android:orientation="horizontal"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                        android:id="@+id/subject_user_mark_title"
+                        android:layout_width="wrap_content"
+                        android:text="@string/subject_statistics_my_grade"
+                        android:layout_height="wrap_content"
+                        style="@style/MiddleLevelTitleStyle"
+                        android:textColor="@color/colorPrimary"
+                />
+                <Button
+                        android:id="@+id/subject_user_mark_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:clickable="false"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        android:stateListAnimator="@null"
+                        style="@style/MarkButtonStyle"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:id="@+id/subject_comments_layout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/subject_user_mark_layout"
+                    android:layout_marginTop="16dp"
+            >
+                <TextView
+                        android:id="@+id/comments_description_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject_statistics_comments"
+                        style="@style/MiddleLevelTitleStyle"
+                        android:textColor="@color/colorPrimary"
+                />
+                <ImageView
+                        app:srcCompat="@drawable/ic_baseline_comment"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/subject_comments_button"
+                />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

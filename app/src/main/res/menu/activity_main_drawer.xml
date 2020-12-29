@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/navigation_start"
+                android:title="@string/start_title"/>
+        <item
+                android:id="@+id/navigation_sign_in"
+                android:title="@string/sign_in_title"/>
+        <item
+                android:id="@+id/navigation_sign_up"
+                android:title="@string/sign_up_title"/>
+    </group>
+</menu>

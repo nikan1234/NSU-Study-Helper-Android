@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">NSU Study Helper</string>
+
+    <string name="start_title">ГЛАВНАЯ</string>
+    <string name="start_select_subject">"Выберите\nдисциплину"</string>
+    <string name="start_select_accept">Далее</string>
+
+    <string name="sign_in_title">ВХОД</string>
+    <string name="sign_in_email_title">Почта</string>
+    <string name="sign_in_password_title">Пароль</string>
+    <string name="sign_in_forgot_password">Забыли пароль?</string>
+    <string name="sign_in_register_action">Регистрация</string>
+    <string name="sign_in_after_register_message">Вы успешно зарегистрированы!</string>
+    <string name="sign_in_after_restore_message">Пароль восстановлен!</string>
+
+    <string name="sign_up_title">РЕГИСТРАЦИЯ</string>
+    <string name="sign_up_name_title">Имя</string>
+    <string name="sign_up_email_title">Почта</string>
+    <string name="sign_up_password_title">Пароль</string>
+    <string name="sign_up_password_repeat_title">Повторите пароль</string>
+    <string name="sign_up_already_registered">Уже зарегистрированы?</string>
+    <string name="sign_up_different_passwords_message">Введите одинаковые пароли</string>
+
+    <string name="subject_statistics_grades">Оценки</string>
+    <string name="subject_statistics_my_grade">Моя оценка</string>
+    <string name="subject_statistics_comments">Комментарии</string>
+
+    <string name="examination_semester">семестр</string>
+
+    <string name="teacher_statistics_birthyear">Год рождения:</string>
+    <string name="teacher_statistics_status">Статус:</string>
+    <string name="teacher_statistics_rating">Рейтинг</string>
+    <string name="teacher_statistics_my_grade">Моя оценка</string>
+    <string name="teacher_statistics_comments">Комментарии</string>
+
+    <string name="info_teacher_list_title">Преподаватели</string>
+    <string name="info_examination_title">Итоговая аттестация</string>
+
+    <string name="comments_title">Комментарии</string>
+
+    <string name="dialog_accept">OK</string>
+    <string name="dialog_cancel">Отмена</string>
+
+    <string name="mark_excellent_description">Отлично</string>
+    <string name="mark_good_description">Хорошо</string>
+    <string name="mark_satisfactory_description">Удовлетворительно</string>
+    <string name="mark_bad_description">Неудовлетворительно</string>
+    <string name="no_mark_description">Нет оценки</string>
+
+    <string name="select_rating_title">Поставьте оценку</string>
+
+    <string name="request_password_title">Восстановить пароль</string>
+    <string name="request_password_email_title">Почта</string>
+    <string name="request_password_button_title">Восстановить</string>
+    <string name="request_password_success_message">Вам на почту было отправлено письмо с указаниями</string>
+
+    <string name="new_password_title">Новый пароль</string>
+    <string name="new_password_button_title">Сохранить</string>
+    <string name="new_password_success_message">Вы успешно изменили пароль</string>
+
+    <string name="error_password_not_match">Подтверждение не совпадает с паролем</string>
+    <string name="error_password_empty">Укажите пароль</string>
+
+    <string name="auth_warning_title">Чтобы получить полный набор функций, войдите в систему</string>
+</resources>

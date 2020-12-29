@@ -1,0 +1,115 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="itemTextColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="TopLevelTitleStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/open_sans_extra_bold</item>
+    </style>
+
+    <style name="MiddleLevelTitleStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="LowLevelTitleStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="MicroTextStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="TextEditStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="UserIconStyle">
+        <!--<item name="android:background">@drawable/app_user_icon</item>-->
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="CancelIconStyle">
+        <!-- <item name="android:background">@drawable/back_arrow</item> -->
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="MarkButtonStyle">
+        <item name="android:background">@drawable/mark_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="TransparentButtonStyle" parent="LowLevelTitleStyle">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">24dip</item>
+        <item name="android:maxHeight">24dip</item>
+        <item name="android:stepSize">1</item>
+    </style>
+</resources>

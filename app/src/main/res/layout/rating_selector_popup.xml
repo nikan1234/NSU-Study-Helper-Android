@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:background="@drawable/background_popup"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:text="@string/select_rating_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            style="@style/MiddleLevelTitleStyle"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/rating_select_title"/>
+    <RatingBar
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:numStars="10"
+            android:layout_gravity="center"
+            android:isIndicator="false"
+            style="@style/RatingBar"
+            android:id="@+id/teacher_rating_bar"
+            />
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:text="@string/dialog_accept"
+                android:layout_width="53dp"
+                android:layout_height="30dp"
+                android:background="@color/transparent"
+                android:layout_gravity="start"
+                android:gravity="center"
+                android:id="@+id/rating_accept_button"
+                style="@style/MiddleLevelTitleStyle"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+        <Button
+                android:text="@string/dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:id="@+id/rating_cancel_button"
+                android:background="@color/transparent"
+                style="@style/MiddleLevelTitleStyle"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

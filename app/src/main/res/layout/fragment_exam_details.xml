@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/backgroundColor"
+                                                   tools:context=".mvp.presentation.exam.details.ExamDetailsFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/app_background"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp" android:layout_marginEnd="32dp"
+                style="@style/TopLevelTitleStyle" android:id="@+id/info_examination_name_title"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/info_examination_name_title" android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp" android:id="@+id/linearLayout">
+            <TextView
+                    android:layout_marginEnd="4dp"
+                    android:layout_width="wrap_content"
+                    style="@style/LowLevelTitleStyle"
+                    android:layout_height="wrap_content" android:id="@+id/info_examination_semester_title"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/LowLevelTitleStyle"
+                    android:layout_height="wrap_content" android:text="@string/examination_semester"/>
+        </LinearLayout>
+        <TextView
+                android:text="@string/info_teacher_list_title"
+                android:layout_width="0dp"
+                style="@style/MiddleLevelTitleStyle"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                android:layout_marginTop="32dp" android:layout_marginStart="32dp" android:layout_marginEnd="32dp"
+                android:id="@+id/textView6"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="200dp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" android:layout_marginTop="16dp"
+                android:layout_marginStart="32dp" android:layout_marginEnd="32dp"
+                android:id="@+id/info_teacher_list_view"/>
+        <TextView
+                android:text="@string/info_examination_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/info_teacher_list_view" android:layout_marginTop="32dp"
+                android:layout_marginStart="32dp" android:layout_marginEnd="32dp"
+                style="@style/MiddleLevelTitleStyle" android:id="@+id/textView8"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp" android:layout_marginTop="16dp">
+            <ImageView
+                    android:src="@drawable/ic_baseline_chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:id="@+id/info_statistics_icon"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:id="@+id/info_show_statistics_button"
+                    style="@style/TransparentButtonStyle"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
